@@ -10,9 +10,6 @@ class WikiSearch(BaseDriver):
         self.driver = driver
         self.wait = wait
 
-    def history_date_search(self):
-        self.wait.until(EC.element_to_be_clickable((By.XPATH, "//h3[normalize-space()='Automatización - Wikipedia, la enciclopedia libre']")))
-
     def page_scrollTo(self):
         scroll_amount = 3000
         pageLength = self.driver.execute_script(f"window.scrollBy(0, {scroll_amount});")

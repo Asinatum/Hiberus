@@ -9,7 +9,6 @@ from pages.google_page import search_google
 from pages.wiki_page import WikiSearch
 
 
-
 @pytest.mark.usefixtures("setup")
 class TestGoogleSearch():
     def test_google_word(self):
